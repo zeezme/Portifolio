@@ -1,0 +1,59 @@
+@import "../../global.scss";
+
+.hamburgerContainer {
+  width: 90px;
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  cursor: pointer;
+}
+
+.line1 {
+  background-color: $mainColor;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  transform: rotate(0deg) translatey(-10px);
+  font-size: 0;
+  transition: 0.25s;
+}
+.line2 {
+  background-color: $mainColor;
+  width: 30px;
+  height: 3px;
+}
+.line3 {
+  background-color: $mainColor;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  transform: rotate(0deg) translatey(10px);
+  transition: 0.25s;
+}
+
+.line1_Open {
+  background-color: $mainColor;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  transform: rotate(45deg) translatey(0);
+  transition: 0.25s;
+  font-size: 0;
+}
+.line2_Open {
+  background-color: $mainColor;
+  width: 0px;
+  height: 3px;
+  opacity: 1;
+}
+.line3_Open {
+  background-color: $mainColor;
+  width: 30px;
+  height: 3px;
+  position: absolute;
+  transform: rotate(-45deg) translatey(0px);
+  transition: 0.25s;
+}
